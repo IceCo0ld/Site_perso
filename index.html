@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cold</title>
+    
+    <!--Balise style dans le fichier que l'on mettra ensuite dans un fichier séparé -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <!-- Division cover pour traiter la "couverture" de la première page -->
+    <div class="cover">
+        <img class="cover-profile" src="profile6.png"/>
+        <h1>Ice Cold</h1>
+        <p>Développeur en construction</p>
+
+        <div class="cover-contact">
+            <!-- Lien mail (subject= permet remplir automatiquement l'objet du mail) et téléphone -->
+            <p><a href="mailto:icecold@gmail.com?subject=Contact%20depuis%20icecold.com">icecold@gmail.com</a></p>
+            <p><a href ="tel:+33700010305">07 00 01 03 05</a></p>
+        </div>
+
+        <!-- Me contacter (text-align possible puisqu'il s'agit de texte) -->
+        <div style="text-align: center;">
+            <p><a class="contact-button" href="mailto:icecold@gmail.com?subject=Contact%20depuis%20icecold.com">Me contacter</a></p>
+        </div>
+
+    </div>
+
+    <!-- Section grise 1 -->
+    <div class="section section-grise1">
+
+        <!-- Séparateur -->
+        <div class="separateur"></div>
+
+        <p>Je développe votre <b>projet Web</b> ou votre <b>application mobile</b> IOS/Android</p>
+
+    </div>
+
+    <!-- <img style ="width: 100%" src = "triangle1.svg"/> -->
+
+    <!-- Section blanche 1-->
+    <div class = "section">
+        <h2>En savoir plus</h2>
+        <img src="profile2.png" class="col-contenu"/>
+        <div class="col-contenu float-right">
+            <div class="texte-avec-ligne-verticale">
+                <p>Mon intérêt premier est le <b>fonctionnement de l'être humain</b>. Je m'intéresse aussi à tous ce qui permet d'explorer le monde différemment et de gagner du temps.
+                <br><br>
+                J'apprends donc la <b>programmation python</b>, le développement Web et le développement d'applications mobiles.</p>
+                <a href="https://www.linkedin.com/in/lucie-coeffic-806006189">En savoir plus sur mon profil</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- Section grise 2 -->
+     <div class="section section-grise2">
+        <h2>Portfolio</h2>
+        <!--Première colonne pour projet pizza -->
+        <table class="col-portfolio" style="display: inline-block;">
+            <tr>
+                <td><div class="barre-verticale"></div></td>
+                <td style="width:100%"><a href="portfolio-site-restaurant.html"><img style="width:100%" src="project1small.jpg"></a></td> <!--Image prend 100% de la taille du parent -->
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center"><a href="portfolio-site-restaurant.html">Site web pour un restaurant</a></td>
+            </tr>
+        </table>
+        <!--Deuxième colonne pour application mobile -->
+        <table class="float-right col-portfolio">
+            <tr>
+                <td><div class="barre-verticale"></div></td>
+                <td style="width:100%"><img style="width:100%" src="project2small.jpg"></td> <!--Image prend 100% de la taille du parent -->
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center"><a href="#">Application mobile <br> "Intelligence artificille" </a></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Section blanche 2 = Frame -->
+    <iframe src="contact-frame.html" scrolling="no"></iframe>
+
+
+    
+
+
+</body>
+</html>
